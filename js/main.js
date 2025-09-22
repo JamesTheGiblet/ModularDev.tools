@@ -229,8 +229,8 @@ async function loadComponents() {
     // Use root-relative paths. This requires a server (like VS Code Live Server)
     // and won't work by just opening the file in the browser.
     await Promise.all([
-        fetchComponent('/partials/_header.html', 'header-placeholder'),
-        fetchComponent('/partials/_footer.html', 'footer-placeholder')
+        fetchComponent('partials/_header.html', 'header-placeholder'),
+        fetchComponent('partials/_footer.html', 'footer-placeholder')
     ]);
 }
 
