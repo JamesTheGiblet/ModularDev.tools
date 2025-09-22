@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Praximous - AI-Powered API Documentation Generator</title>
+
+<link rel="stylesheet" href="/css/praximous-theme.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<button id="crtToggle">CRT Mode: Off</button>
+
+<!-- Header placeholder -->
+<div id="header-placeholder"></div>
+
+<main class="static-page-section">
+    <div class="container">
+        <article>
+            <img src="/images/ascii-text-art.png" alt="Praximous" class="ascii-art-image js-scroll-animate">
+            <h1 class="js-scroll-animate" style="text-align: center;">API Documentation, Perfected</h1>
+            <p class="js-scroll-animate" style="text-align: center;">
+                <img src="https://img.shields.io/badge/status-active-success" alt="Project Status: Active">
+                <img src="https://img.shields.io/badge/license-MIT-blue" alt="License: MIT">
+                <img src="https://img.shields.io/badge/tech-Node.js%20%7C%20AI%20%7C%20CLI-orange" alt="Tech Stack: Node.js | AI | CLI">
+                <img src="https://img.shields.io/badge/maintained-yes-brightgreen" alt="Maintained: Yes">
+            </p>
+
+            <p class="js-scroll-animate section-subtitle" style="font-size: 1.3rem;">
+                Our vision is to create the industry standard for intelligent, developer-friendly API documentation. We believe that documentation shouldn't be an afterthought but a core, living part of the development lifecycle.
+            </p>
+
+            <div class="js-scroll-animate" style="margin: 2rem 0; text-align: center;">
+                <a href="https://app.praximous.dev" class="btn btn-primary btn-large">Go to Dashboard</a>
+                <p style="margin-top: 1rem; color: var(--text-muted);">Sign up for a free Core account.</p>
+            </div>
+
+            <img src="../../images/api-docs-screenshot.png" alt="A screenshot of the Praximous API Documentation dashboard showing a generated API reference." class="js-scroll-animate" style="width: 100%; max-width: 800px; margin: 1rem auto; display: block; border-radius: 0.5rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);">
+
+            <hr class="js-scroll-animate">
+
+            <h2 class="js-scroll-animate">The Problem: Stale, Inaccurate, and Uninspiring Docs</h2>
+            <p class="js-scroll-animate">For most teams, API documentation is a persistent source of pain. It's a manual, tedious process that often results in:</p>
+            <ul class="js-scroll-animate">
+                <li><strong>❌ Out-of-Sync Content:</strong> Documentation quickly drifts from the actual implementation, leading to confusion and failed integration attempts for your API consumers.</li>
+                <li><strong>⏳ Wasted Developer Time:</strong> Engineers spend hours manually writing and updating YAML files or markdown, time that could be spent building features.</li>
+                <li><strong>📉 Poor Developer Experience:</strong> Incomplete or unclear documentation frustrates developers, increases support tickets, and can ultimately harm adoption of your API.</li>
+                <li><strong>🚧 Inconsistent Standards:</strong> Without a central tool, every team documents their API differently, leading to a fragmented and unprofessional appearance.</li>
+            </ul>
+
+            <h2 class="js-scroll-animate">The Solution: Documentation as a Byproduct of Code</h2>
+            <p class="js-scroll-animate">Praximous solves these problems by treating your source code as the **single source of truth**. By integrating directly with your repositories, we automate the generation of beautiful, accurate, and interactive documentation.</p>
+            <ul class="js-scroll-animate">
+                <li><strong>✅ Always Accurate:</strong> Since docs are generated from the code that's actually running, they are never out of sync. What you see is what you get.</li>
+                <li><strong>🚀 Accelerates Workflow:</strong> Integrate our CLI into your CI/CD pipeline. Documentation is automatically updated on every push, requiring zero manual effort.</li>
+                <li><strong>🧠 AI-Powered Enrichment:</strong> We go beyond simple extraction. Our AI analyzes your code to suggest clear descriptions and generate realistic examples, making your docs truly developer-friendly.</li>
+                <li><strong>⚙️ Centralized Management:</strong> Our web dashboard provides a single place to manage all your API documentation projects, ensuring consistency and quality across your entire organization.</li>
+            </ul>
+
+            <hr class="js-scroll-animate">
+
+            <div class="collapsible-section js-scroll-animate">
+                <h2 class="collapsible-toggle">Key Features (Version 1.0) <i class="fas fa-chevron-down"></i></h2>
+                <div class="collapsible-content">
+                    <p>The current version of Praximous is built on a powerful and stable foundation, designed to cater to both individual developers and large enterprise teams.</p>
+                    <h3>Unified Experience</h3>
+                    <p>We provide the right tool for the job, whether you're in a GUI or a terminal.</p>
+                    <ul>
+                        <li><strong>Web-Based Dashboard:</strong> A central, intuitive GUI to manage projects, configure repositories, trigger builds, and share documentation.</li>
+                        <li><strong>Powerful CLI:</strong> A full-featured command-line interface designed for developers and automation. Integrate documentation generation directly into your CI/CD pipelines.</li>
+                        <li><strong>On-Premises UI:</strong> The Enterprise version is a complete, self-hosted web application, providing maximum control and security.</li>
+                    </ul>
+                    <h3>Core Engine</h3>
+                    <p>The heart of Praximous is a robust and reliable documentation generation engine.</p>
+                    <ul>
+                        <li><strong>Multi-Language Rule-Based Extraction:</strong> We parse your source code and comments (JSDoc, Docstrings, Javadoc, Godoc) to build a precise, deterministic representation of your API.</li>
+                        <li><strong>OpenAPI 3.0 Specification Generation:</strong> We generate industry-standard OpenAPI 3.0 specs, unlocking the entire ecosystem of compatible tools.</li>
+                    </ul>
+                    <h3>AI Capabilities</h3>
+                    <p>We layer intelligent features on top of our core engine to enhance and accelerate your workflow.</p>
+                    <ul>
+                        <li><strong>Intelligent Description & Example Generation:</strong> Our AI assists in writing clear, human-friendly endpoint summaries, parameter descriptions, and request/response examples.</li>
+                        <li><strong>AI Guardrails and Validation:</strong> The AI acts as a reviewer, flagging incomplete descriptions and identifying mismatches to help you maintain high standards.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="js-scroll-animate">
+
+            <div class="js-scroll-animate">
+                <div class="section-divider" id="demo">
+                    ==============================<br>
+                    >> LIVE DEMO << <br>
+                    ==============================
+                </div>
+                <div class="terminal">
+                    <div class="terminal-header">praximous-cli v1.0.0</div>
+                    <div id="terminal-content">
+                        <span id="terminal-text"></span><span class="cursor"></span>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="js-scroll-animate">
+
+            <div class="collapsible-section js-scroll-animate">
+                <h2 class="collapsible-toggle">Public Roadmap <i class="fas fa-chevron-down"></i></h2>
+                <div class="collapsible-content">
+                    <p>Praximous is constantly evolving. We believe in building in the open and sharing our vision for the future. See what we're working on now, next, and in the future.</p>
+                    <div style="margin: 2rem 0; text-align: center;">
+                        <a href="./roadmap.md" class="btn btn-secondary">View the Full Roadmap</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapsible-section">
+                <h2 class="collapsible-toggle">Pricing Tiers <i class="fas fa-chevron-down"></i></h2>
+                <div class="collapsible-content">
+                    <div class="tiers js-scroll-animate">
+                        <div class="tier-card">
+                            <div class="tier-title">Core</div>
+                            <div class="tier-price">
+                                <span class="currency">£</span>0
+                                <span class="period">/month</span>
+                            </div>
+                            <p>Perfect for getting started with rule-based API documentation.</p>
+                            <ul class="tier-features">
+                                <li>Rule-based API extraction</li>
+                                <li>Up to 3 APIs</li>
+                                <li>50 endpoints maximum</li>
+                                <li>OpenAPI 3.0 export</li>
+                                <li>Community support</li>
+                            </ul>
+                            <a href="#" class="btn btn-secondary">Start Free</a>
+                        </div>
+                        <div class="tier-card featured">
+                            <div class="tier-title">Pro</div>
+                            <div class="tier-price">
+                                <span class="currency">£</span>4.95
+                                <span class="period">/month</span>
+                            </div>
+                            <p>AI-enhanced documentation with professional features.</p>
+                            <ul class="tier-features">
+                                <li>Everything in Core</li>
+                                <li>AI-powered descriptions</li>
+                                <li>Unlimited APIs & endpoints</li>
+                                <li>Custom branding</li>
+                                <li>Example generation</li>
+                                <li>Email support</li>
+                            </ul>
+                            <a href="#" class="btn">Start Pro Trial</a>
+                        </div>
+                        <div class="tier-card">
+                            <div class="tier-title">Enterprise</div>
+                            <div class="tier-price">
+                                <span>Contact Us</span>
+                            </div>
+                            <p>On-premises power with enterprise compliance and control.</p>
+                            <ul class="tier-features">
+                                <li>Everything in Pro</li>
+                                <li>On-premises deployment</li>
+                                <li>Custom rule packs & SSO</li>
+                                <li>Dedicated support & SLA</li>
+                            </ul>
+                            <a href="#" class="btn btn-secondary">Contact Sales</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</main>
+
+<!-- Footer placeholder -->
+<div id="footer-placeholder"></div>
+
+
+<pre id="easter-egg"> (\\_//)
+
+( o.o ) < PRAXIMOUS DRAGON >
+
+> ^ < Secret Enterprise Tier++</pre>
+
+
+<script src="/js/main.js"></script>
+
+</body>
+
+</html> 
