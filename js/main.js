@@ -234,8 +234,8 @@ async function loadComponents() {
     };
 
     await Promise.all([
-        fetchComponent('partials/header.html', 'header-placeholder'),
-        fetchComponent('partials/footer.html', 'footer-placeholder')
+        fetchComponent('partials/header.html', 'header-placeholder'), // Must load first for nav scripts
+        fetchComponent('partials/footer.html', 'footer-placeholder') // Footer can load in parallel
     ]);
 }
 
