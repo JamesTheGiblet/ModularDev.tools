@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sovereign Engine: Flux - ModularDev.tools</title>
+    <meta name="description" content="A hackable, modular game framework designed for total creative control. Modify weapons, rules, and player stats live in your browser.">
+    <script>
+      // Dynamically set the base URL for asset loading to work on GitHub Pages and locally.
+      const host = window.location.hostname;
+      let basePath = '/';
+      if (host.endsWith('github.io')) {
+        // Assumes the repo name is the first segment of the path.
+        const repoName = window.location.pathname.split('/')[1];
+        if (repoName) {
+          basePath = `/${repoName}/`;
+        }
+      }
+      document.write(`<base href="${basePath}">`);
+    </script>
+    <link rel="stylesheet" href="css/praximous-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main class="static-page-section">
+        <div class="container">
+            <article>
+                <h1 class="js-scroll-animate" style="text-align: center;">🚀 SOVEREIGN ENGINE: Flux</h1>
+                <p class="js-scroll-animate section-subtitle" style="font-size: 1.3rem;">
+                    Hackable. Modular. Yours. Every line of code is an invitation.
+                </p>
+                <p class="js-scroll-animate" style="text-align: center;">
+                    <img src="https://img.shields.io/badge/status-MVP%20Release-brightgreen" alt="Project Status: MVP Release">
+                    <img src="https://img.shields.io/badge/license-MIT-blue" alt="License: MIT">
+                    <img src="https://img.shields.io/badge/contributions-welcome-brightgreen" alt="Contributions Welcome">
+                </p>
+
+                <p class="js-scroll-animate">Welcome to Sovereign Engine, a game framework designed from the ground up to empower creators with total control. This isn't an engine; it's a living manifesto for digital sovereignty, challenging the notion of software as a black box. Here, every pixel is hackable, every rule is rewritable, and every system is explicitly yours to command.</p>
+
+                <div class="js-scroll-animate" style="margin: 2rem 0; text-align: center;">
+                    <div class="cta-buttons" style="margin-top: 0; justify-content: center;">
+                        <a href="https://modulardev-tools.github.io/sovereign-engine/" class="btn btn-large" target="_blank" rel="noopener noreferrer">Play the Game</a>
+                        <a href="https://github.com/ModularDev-Tools/sovereign-engine" class="btn btn-secondary btn-large" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View Source</a>
+                    </div>
+                </div>
+
+                <hr class="js-scroll-animate">
+
+                <h2 class="js-scroll-animate">⚡ The Manifesto: Core Principles</h2>
+                <p class="js-scroll-animate">We believe software should be transparent, modifiable, and truly owned by its users. The Sovereign Engine is a testament to this belief, built on a philosophy of ultimate flexibility and immediate feedback.</p>
+                <ul class="js-scroll-animate">
+                    <li><strong>Dependency-Injected Systems:</strong> Core functionalities like the `WeaponSystem`, `CharacterSystem`, and `RulesSystem` are modular and hot-swappable.</li>
+                    <li><strong>No Build Step:</strong> Forget compilers and complex environments. Edit, save, refresh. Your changes are instantly reflected in the game.</li>
+                    <li><strong>No Licensing:</strong> This project is in the Public Domain (or uses a highly permissive MIT License). It's truly yours to use, modify, and redistribute.</li>
+                    <li><strong>No Servers:</strong> The engine is designed to run independently and can be hosted anywhere—from your local machine to IPFS.</li>
+                    <li><strong>No Limits:</strong> If you can code it in JavaScript, you can mod it. The engine's design explicitly exposes its internal workings for maximum creative freedom.</li>
+                </ul>
+
+                <h2 class="js-scroll-animate">💡 How to Mod</h2>
+                <p class="js-scroll-animate">The engine is designed for live modification directly in the browser. The "How to Hack" panel in the UI provides a quick reference, but the core workflow is simple: select a system, load a preset to see how it works, edit the code, and click "Apply" to see your changes instantly.</p>
+
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
