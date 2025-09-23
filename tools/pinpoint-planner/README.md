@@ -78,7 +78,8 @@ The Pin Validator is like a real-time spell-checker for your hardware:
 ### Running Locally
 
 ```bash
-git clone https://github.com/
+git clone https://github.com/ModularDev-Tools/pinpoint-planner.git
+cd pinpoint-planner
 ```
 
 Open `index.html`:
