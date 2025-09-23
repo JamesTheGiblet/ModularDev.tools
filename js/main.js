@@ -234,8 +234,8 @@ async function loadComponents() {
     };
 
     await Promise.all([
-        fetchComponent('partials/_header.html', 'header-placeholder'),
-        fetchComponent('partials/_footer.html', 'footer-placeholder')
+        fetchComponent('partials/header.html', 'header-placeholder'),
+        fetchComponent('partials/footer.html', 'footer-placeholder')
     ]);
 }
 
