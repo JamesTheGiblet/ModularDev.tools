@@ -1,4 +1,4 @@
-# 🚀 SOVEREIGN ENGINE: Flux (MVP Release)
+# 🚀 Project Flux (MVP Release)
 
 ![Status](https://img.shields.io/badge/status-MVP%20Release-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue)
@@ -6,37 +6,37 @@
 
 **Hackable. Modular. Yours. Every line of code is an invitation.**
 
-This is the Minimum Viable Product (MVP) release of the Sovereign Engine. It's a fully functional, playable, and hackable proof of concept demonstrating our vision for "sovereign software." We invite you to dive in, break things, and see the potential for yourself.
+This is the Minimum Viable Product (MVP) release of Project Flux. It's a fully functional, playable, and hackable proof of concept demonstrating our vision for "sovereign software." We invite you to dive in, break things, and see the potential for yourself.
 
 ---
 
 ## ⚡ The Manifesto
 
-Welcome to Sovereign Engine, a game framework designed from the ground up to empower creators with total control. This isn't an engine; it's a living manifesto for digital sovereignty, challenging the notion of software as a black box. Here, every pixel is hackable, every rule is rewritable, and every system is explicitly yours to command.
+Welcome to Project Flux, a game framework designed from the ground up to empower creators with total control. This isn't an engine; it's a living manifesto for digital sovereignty, challenging the notion of software as a black box. Here, every pixel is hackable, every rule is rewritable, and every system is explicitly yours to command.
 
-We believe software should be transparent, modifiable, and truly owned by its users. The Sovereign Engine is a testament to this belief. It's about refusing to accept limitations and embracing the power to reshape your digital experience. No permissions, no gatekeepers, just pure creative freedom.
+We believe software should be transparent, modifiable, and truly owned by its users. Project Flux is a testament to this belief. It's about refusing to accept limitations and embracing the power to reshape your digital experience. No permissions, no gatekeepers, just pure creative freedom.
 
 ## ✨ Core Principles
 
-The Sovereign Engine is built on a philosophy of ultimate flexibility and immediate feedback:
+Project Flux is built on a philosophy of ultimate flexibility and immediate feedback:
 
 - **Dependency-Injected Systems:** The engine's architecture promotes modularity. Core functionalities like the `WeaponSystem`, `CharacterSystem`, and `RulesSystem` are dependency-injected and hot-swappable.
 - **No Build Step:** Forget compilers and bundlers. Edit, save, refresh. Your changes are instantly reflected, allowing for rapid iteration.
 - **No Licensing:** This project is intentionally in the Public Domain (or uses a highly permissive MIT License). You are free to fork, use, modify, and redistribute without asking for permission.
 - **No Servers:** The engine is designed to run independently. It operates offline and can be hosted anywhere—your local machine, a simple HTTP server, IPFS, or GitHub Pages.
-- **No Limits:** If you can code it in JavaScript, you can mod it. The engine's design explicitly exposes its internal workings, providing you with the tools to implement anything.
+- **No Limits:** If you can code it in JavaScript, you can mod it. The game's design explicitly exposes its internal workings, providing you with the tools to implement anything.
 
 ---
 
 ## 🚀 Get Started (Self-Hosting)
 
-Getting the Sovereign Engine up and running is as straightforward as possible:
+Getting Project Flux up and running is as straightforward as possible:
 
 1. **Clone this repository:**
 
     ```bash
-    git clone https://github.com/ModularDev-Tools/sovereign-engine.git
-    cd sovereign-engine
+    git clone https://github.com/ModularDev-Tools/project-flux.git
+    cd project-flux
     ```
 
 2. **Serve locally (requires Python 3):**
@@ -49,13 +49,13 @@ Getting the Sovereign Engine up and running is as straightforward as possible:
     *(If you don't have Python, any other local server like Node.js `http-server` will work.)*
 
 3. **Open in browser:**
-    Open your web browser and navigate to `http://localhost:8000`. You should see the Sovereign Engine running, ready for your modifications!
+    Open your web browser and navigate to `http://localhost:8000`. You should see Project Flux running, ready for your modifications!
 
 ---
 
 ## 💡 How to Mod
 
-The engine is designed for live modification directly in the browser. The "How to Hack" panel in the UI provides a quick reference, but here's the core workflow:
+The game is designed for live modification directly in the browser. The "How to Hack" panel in the UI provides a quick reference, but here's the core workflow:
 
 1. **Select a Mod Panel:** Choose what you want to change: 🔫 WEAPON, 🎮 RULES, or 🧍 PLAYER.
 2. **Choose a Preset:** Use the dropdown menu to load existing code. This is the best way to see how things work.
@@ -91,7 +91,7 @@ function shoot(player, target, engine) {
 
 ### 🎮 Rules Mod Example
 
-The rules mod is a function that runs every frame: `function update(engine, dt)`. You can use it to control enemy spawning, difficulty, or any other global game logic. The engine comes with a "Hardcore Spawner" preset that demonstrates creating custom enemy AI.
+The rules mod is a function that runs every frame: `function update(engine, dt)`. You can use it to control enemy spawning, difficulty, or any other global game logic. The game comes with a "Hardcore Spawner" preset that demonstrates creating custom enemy AI.
 
 ---
 
@@ -111,7 +111,7 @@ This MVP is a fully functional proof of concept showcasing the core value of "so
 
 ## 🔮 The Vision Realized
 
-The Sovereign Engine is more than just a game; it's a proof of concept for sovereign software. Every click in the mod panel is someone exercising digital sovereignty. Every line of code edited is someone refusing to accept software as a black box. The engine teaches by invitation: "Here's how weapons work. Here's how to change them. What will you build?"
+Project Flux is more than just a game; it's a proof of concept for sovereign software. Every click in the mod panel is someone exercising digital sovereignty. Every line of code edited is someone refusing to accept software as a black box. The engine teaches by invitation: "Here's how weapons work. Here's how to change them. What will you build?"
 
 Want to add multiplayer? Mod the network layer. Want different graphics? Mod the renderer. The architecture doesn't care what you build—it just gives you the tools and gets out of your way. This is how all software should be built: transparent, modifiable, and yours.
 
@@ -119,11 +119,11 @@ Want to add multiplayer? Mod the network layer. Want different graphics? Mod the
 
 ## 🌐 Distribution & Sharing
 
-The Sovereign Engine is designed for maximum freedom in distribution:
+Project Flux is designed for maximum freedom in distribution:
 
 - **Self-Hosting:** A simple `git clone` and `python -m http.server` is all you need.
-- **IPFS Distribution:** For truly uncensorable, distributed hosting, add your `sovereign-engine/` directory to IPFS.
-- **GitHub Pages:** Push your repository to GitHub and instantly host your game globally. Just enable it in your repository settings, and your game will be live at `https://YOUR_GITHUB_USERNAME.github.io/sovereign-engine/`.
+- **IPFS Distribution:** For truly uncensorable, distributed hosting, add your `project-flux/` directory to IPFS.
+- **GitHub Pages:** Push your repository to GitHub and instantly host your game globally. Just enable it in your repository settings, and your game will be live at `https://YOUR_GITHUB_USERNAME.github.io/project-flux/`.
 
 ---
 
@@ -155,7 +155,7 @@ If you've created a cool Weapon, Rule, or Player mod, you can submit it to be in
 
 4. **Submit a Pull Request:**
     - Commit your changes and push them to your fork.
-    - Open a Pull Request to the main `sovereign-engine` repository.
+    - Open a Pull Request to the main `project-flux` repository.
     - In the PR description, briefly explain what your mod does.
 
 We'll review your submission, and if it's a good fit, we'll merge it!
