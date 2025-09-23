@@ -165,7 +165,3 @@ We'll review your submission, and if it's a good fit, we'll merge it!
 ## 📄 License
 
 This project is released under the MIT License. For full details, see the `LICENSE` file in this repository.
-
-## 📧 Contact
-
-Have questions or want to connect? Reach out on our community channels.
