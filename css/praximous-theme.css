@@ -257,6 +257,12 @@ header {
     width: auto;
 }
 
+/* SVG Logo Gradient Colors (Theme-aware) */
+.logo-gradient-start { stop-color: var(--primary); }
+.logo-gradient-end { stop-color: var(--secondary); }
+.logo-gradient-accent-start { stop-color: var(--accent); }
+.logo-gradient-accent-end { stop-color: var(--secondary); }
+
 .logo-svg text { fill: var(--text); }
 .logo-svg text + text { fill: var(--text-muted); }
 

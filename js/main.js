@@ -206,12 +206,19 @@ function initializePageScripts() {
  * Fetches and injects reusable HTML components like header and footer.
  */
 async function loadComponents() {
+    // Get the base path from the <base> tag, which is set dynamically in the HTML head.
+    // This ensures that fetch requests work correctly both locally and on GitHub Pages.
+    const baseHref = document.querySelector('base')?.href || window.location.origin;
+
     const fetchComponent = async (url, placeholderId) => {
         const placeholder = document.getElementById(placeholderId);
         if (!placeholder) return; // Don't fail if a page doesn't have a placeholder
 
+        // Construct the full, absolute URL for the component.
+        const fullUrl = new URL(url, baseHref).href;
+
         try {
-            const response = await fetch(url);
+            const response = await fetch(fullUrl);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -220,14 +227,12 @@ async function loadComponents() {
             // This is better for semantics as it results in <header> and <footer> tags in the DOM.
             placeholder.outerHTML = html;
         } catch (error) {
-            console.error(`Could not load component from ${url}:`, error);
+            console.error(`Could not load component from ${fullUrl}:`, error);
             // Leave a message in the placeholder if loading fails
             placeholder.innerHTML = `<p style="color: red; text-align: center;">Failed to load ${placeholderId}.</p>`;
         }
     };
 
-    // Use root-relative paths. This requires a server (like VS Code Live Server)
-    // and won't work by just opening the file in the browser.
     await Promise.all([
         fetchComponent('partials/_header.html', 'header-placeholder'),
         fetchComponent('partials/_footer.html', 'footer-placeholder')
