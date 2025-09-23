@@ -1,5 +1,10 @@
 # 🚀 SOVEREIGN ENGINE: Flux (MVP Release)
 
+![Project Status](https://img.shields.io/badge/status-active-success)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Tech Stack](https://img.shields.io/badge/tech-Vanilla%20JS%20%7C%20HTML5%20%7C%20CSS3-orange)
+![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen)
+
 **Hackable. Modular. Yours. Every line of code is an invitation.**
 
 > This is the Minimum Viable Product (MVP) release of the Sovereign Engine. It's a fully functional, playable, and hackable proof of concept demonstrating our vision for "sovereign software." We invite you to dive in, break things, and see the potential for yourself.
@@ -8,9 +13,28 @@ Welcome to Sovereign Engine, a game framework designed from the ground up to emp
 
 ---
 
-## ⚡ THE MANIFESTO
+## Table of Contents
 
-We believe software should be transparent, modifiable, and truly owned by its users. The Sovereign Engine is a testament to this belief. It's about refusing to accept limitations and embracing the power to reshape your digital experience. No permissions, no gatekeepers, just pure creative freedom.
+- [The Problem: The Black Box Engine](#the-problem-the-black-box-engine)
+- [The Solution: Sovereign Software](#the-solution-sovereign-software)
+- [Core Principles](#-core-principles)
+- [Get Started](#-get-started-self-hosting)
+- [How to Mod](#-how-to-mod)
+- [MVP Core Features](#-mvp-core-features)
+- [Distribution & Sharing](#-distribution--sharing)
+- [Contributing](#-contributing--sharing-your-mods)
+- [License](#-license)
+- [Contact](#-contact)
+
+---
+
+## The Problem: The Black Box Engine
+
+Traditional game engines often feel like black boxes. They impose limitations, hide their internal workings, and lock creators into a specific way of doing things. This restricts creative freedom and makes developers dependent on the engine's roadmap, not their own. We believe software should be transparent, modifiable, and truly owned by its users.
+
+## The Solution: Sovereign Software
+
+The Sovereign Engine is a testament to this belief. It's about refusing to accept limitations and embracing the power to reshape your digital experience. The engine teaches by invitation: "Here's how weapons work. Here's how to change them. What will you build?" Want to add multiplayer? Mod the network layer. Want different graphics? Mod the renderer. The architecture doesn't care what you build—it just gives you the tools and gets out of your way. This is how all software should be built: transparent, modifiable, and yours.
 
 ## ✨ Core Principles
 
@@ -28,6 +52,15 @@ The Sovereign Engine is built on a philosophy of ultimate flexibility and immedi
 
 ---
 
+## 🛠️ Technology Stack
+
+This project is built with a focus on simplicity, speed, and zero dependencies.
+
+- **Frontend:** HTML5, CSS3, Vanilla JavaScript (ES6+)
+- **Core Principle:** No build tools, no compilers, no frameworks. Just pure web technologies.
+
+---
+
 ## 🚀 Get Started (Self-Hosting)
 
 Getting the Sovereign Engine up and running is as straightforward as possible:
@@ -36,7 +69,7 @@ Getting the Sovereign Engine up and running is as straightforward as possible:
     Open your terminal or command prompt and run:
 
     ```bash
-    git clone https://github.com/YOUR_GITHUB_USERNAME/sovereign-engine.git
+    git clone https://github.com/ModularDev-Tools/sovereign-engine.git
     cd sovereign-engine
     ```
 
@@ -244,12 +277,6 @@ This MVP is not just a tech demo. It's a fully functional proof of concept showc
 - **Procedurally Generated Audio & Visuals:** All sound effects are generated on-the-fly, creating a unique and responsive audio landscape. Combined with dynamic particle effects and sprite rotation, the engine feels alive.
 - **Deterministic Gameplay:** Utilize the "Seed" system to generate predictable, replayable runs—perfect for speedrunning, competitions, or simply mastering a specific challenge.
 
-## 🔮 The Vision Realized
-
-The Sovereign Engine is more than just a game; it's a proof of concept for sovereign software. Every click in the mod panel is someone exercising digital sovereignty. Every line of code edited is someone refusing to accept software as a black box. The engine teaches by invitation: "Here's how weapons work. Here's how to change them. What will you build?"
-
-Want to add multiplayer? Mod the network layer. Want different graphics? Mod the renderer. Want blockchain integration? Mod the state system. The architecture doesn't care what you build—it just gives you the tools and gets out of your way. This is how all software should be built: transparent, modifiable, and yours.
-
 ## 🌐 Distribution & Sharing
 
 The Sovereign Engine is designed for maximum freedom in distribution:
@@ -266,7 +293,7 @@ This MVP is just the beginning. We are building a comprehensive suite of documen
 
 The complete documentation and our detailed future roadmap are available for purchase. Your support will directly fund the development of new features and help us continue our mission to build truly sovereign software.
 
-### 👉 Get the Full Documentation & Roadmap on our Website
+👉 [Get the Full Documentation & Roadmap on our Website](https://www.modulardev.tools/)
 
 ## 🤝 Contributing & Sharing Your Mods
 

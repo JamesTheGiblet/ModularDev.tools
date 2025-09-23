@@ -1,5 +1,10 @@
 # PinPoint Planner
 
+![Project Status](https://img.shields.io/badge/status-active-success)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Tech Stack](https://img.shields.io/badge/tech-Vanilla%20JS%20%7C%20HTML5%20%7C%20CSS3-orange)
+![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen)
+
 ![SBC Example](https://upload.wikimedia.org/wikipedia/commons/3/3d/Raspberry_Pi_4_Model_B_-_Side.jpg)
 
 **Plan your hardware projects without the headache.**
@@ -73,8 +78,7 @@ The Pin Validator is like a real-time spell-checker for your hardware:
 ### Running Locally
 
 ```bash
-git clone https://github.com/your-username/pinpoint-planner.git
-cd pinpoint-planner
+git clone https://github.com/
 ```
 
 Open `index.html`:
