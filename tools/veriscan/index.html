@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praximous File Integrity Monitor</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fdfdfd;
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header p {
+            color: #7f8c8d;
+            font-size: 1.1em;
+        }
+        section {
+            background-color: #fff;
+            border: 1px solid #e1e1e1;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h2 {
+            font-size: 1.8em;
+            color: #2980b9;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .problem-solution p {
+            font-size: 1.1em;
+            color: #555;
+        }
+        .problem-solution strong {
+            color: #c0392b;
+        }
+        .key-features ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .key-features li {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #2980b9;
+            border-radius: 4px;
+        }
+        .key-features strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #34495e;
+        }
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        .pricing-table th, .pricing-table td {
+            border: 1px solid #ddd;
+            padding: 15px;
+        }
+        .pricing-table th {
+            background-color: #f2f2f2;
+            color: #34495e;
+        }
+        .pricing-table .tier-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: #ecf0f1;
+        }
+        .pricing-table .price {
+            font-size: 2em;
+            font-weight: bold;
+            color: #2980b9;
+        }
+        .pricing-table .check {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .roadmap .quarter {
+            margin-bottom: 20px;
+        }
+        .roadmap h3 {
+            color: #34495e;
+            font-size: 1.2em;
+        }
+        .roadmap ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .roadmap .status-planned {
+            color: #2980b9;
+        }
+        .roadmap .status-research {
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Praximous File Integrity Monitor (FIM)</h1>
+        <p>A high-performance, reliable solution for tracking changes to your critical files and directories.</p>
+    </header>
+
+    <section class="problem-solution">
+        <h2>The Problem: The Silent Threat of Unauthorized Changes</h2>
+        <p>In any secure system, unauthorized or unexpected changes to files are a major red flag. They can indicate a <strong>security breach, malware infection, accidental misconfiguration, or data corruption</strong>. Without constant vigilance, these changes can go undetected for weeks or months, leading to catastrophic data loss, compliance failures, and system instability.</p>
+    </section>
+
+    <section class="problem-solution">
+        <h2>Our Solution: Proactive & Reliable Integrity Monitoring</h2>
+        <p>Our File Integrity Monitor provides a powerful and efficient solution. It works by creating a cryptographic "fingerprint" of your file system to establish a secure baseline. It then continuously monitors for any deviations from this baseline, providing <strong>immediate, actionable intelligence</strong> on what changed, when it changed, and where. This transforms your security posture from reactive to proactive.</p>
+    </section>
+
+    <section class="key-features">
+        <h2>Key Features</h2>
+        <ul>
+            <li>
+                <strong>Comprehensive Scanning</strong>
+                Perform deep, on-demand scans of your entire file system to establish or verify a baseline.
+            </li>
+            <li>
+                <strong>Real-Time Monitoring</strong>
+                Instantly detect file creation, modification, and deletion events as they happen.
+            </li>
+            <li>
+                <strong>Detailed Difference Reporting</strong>
+                Get clear, concise reports on exactly what has been added, modified, moved, or deleted between scans.
+            </li>
+            <li>
+                <strong>Multiple Report Formats</strong>
+                Export reports in human-readable (Text, HTML) and machine-readable (JSON, CSV) formats for easy integration.
+            </li>
+            <li>
+                <strong>High-Performance & Concurrent</strong>
+                Utilizes a multi-worker architecture to scan thousands of files per second with minimal system impact.
+            </li>
+            <li>
+                <strong>Secure Database Baseline</strong>
+                All file state information is stored securely in a local, high-performance SQLite database.
+            </li>
+            <li>
+                <strong>Automated Backups & Maintenance</strong>
+                Includes built-in scheduling for database backups and cleanup of old scan data.
+            </li>
+            <li>
+                <strong>Lightweight & Configurable</strong>
+                Runs as a single, lightweight binary with simple JSON configuration for easy deployment and management.
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Pricing Tiers</h2>
+        <table class="pricing-table">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Community</th>
+                    <th>Professional</th>
+                    <th>Enterprise</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tier-name" colspan="4">Core Functionality</td>
+                </tr>
+                <tr>
+                    <td>Scan, Diff, & Watch Modes</td>
+                    <td class="check">✔</td>
+                    <td class="check">✔</td>
+                    <td class="check">✔</td>
+                </tr>
+                <tr>
+                    <td>Multiple Report Formats</td>
+                    <td class="check">✔</td>
+                    <td class="check">✔</td>
+                    <td class="check">✔</td>
+                </tr>
+                <tr>
+                    <td>Automated Backups</td>
+                    <td>-</td>
+                    <td class="check">✔</td>
+                    <td class="check">✔</td>
+                </tr>
+                <tr>
+                    <td class="tier-name" colspan="4">Management & Support</td>
+                </tr>
+                <tr>
+                    <td>Alerting Hooks (Slack, Email)</td>
+                    <td>-</td>
+                    <td class="check">✔</td>
+                    <td class="check">✔</td>
+                </tr>
+                <tr>
+                    <td>Web Dashboard</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td class="check">✔</td>
+                </tr>
+                <tr>
+                    <td>API Access</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td class="check">✔</td>
+                </tr>
+                 <tr>
+                    <td>Support</td>
+                    <td>Community</td>
+                    <td>Standard Business Hours</td>
+                    <td>24/7 Priority Support</td>
+                </tr>
+                <tr>
+                    <td class="price-row"></td>
+                    <td class="price">Free</td>
+                    <td class="price">$20<br>/agent/month</td>
+                    <td class="price">Contact Us</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="roadmap">
+        <h2>Public Roadmap</h2>
+        <div class="quarter">
+            <h3>Q4 2025 <span class="status-planned">(Planned)</span></h3>
+            <ul>
+                <li><strong>Alerting Hooks:</strong> Native integration for sending reports/alerts to destinations like Slack and email.</li>
+                <li><strong>Centralized Configuration Management:</strong> Ability to manage configurations from a central point for easier deployment at scale.</li>
+            </ul>
+        </div>
+        <div class="quarter">
+            <h3>Q1 2026 <span class="status-planned">(Planned)</span></h3>
+            <ul>
+                <li><strong>Web Dashboard (Read-only):</strong> A simple web interface for viewing the latest diff reports and scan history.</li>
+                <li><strong>REST API:</strong> A basic API for programmatically triggering scans and retrieving report data.</li>
+            </ul>
+        </div>
+        <div class="quarter">
+            <h3>Q2 2026 <span class="status-research">(In Research)</span></h3>
+            <ul>
+                <li><strong>Role-Based Access Control (RBAC):</strong> Granular permissions for the Web Dashboard and API.</li>
+                <li><strong>Cloud Storage Support:</strong> Ability to monitor buckets in cloud storage providers like AWS S3 and Google Cloud Storage.</li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+</html>
+```
