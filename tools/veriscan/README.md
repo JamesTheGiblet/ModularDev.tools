@@ -1,6 +1,6 @@
 # Veriscan
 
-### Know Your State. Trust Your System
+## Know Your State. Trust Your System
 
 Veriscan is a high-performance, lightweight File Integrity Monitoring (FIM) solution designed for modern security, DevOps, and operations teams. It provides certainty in a world of constant change by creating a trusted baseline of your systems and instantly detecting any unauthorized or unexpected modifications.
 
