@@ -32,11 +32,11 @@ We offer a collection of tools to solve common development challenges.
 * **Status:** Live
 * **Learn More:** [View Tool Page](./tools/api-docs/index.html)
 
-### 🧩 Component Library
+### 🛡️ Veriscan FIM
 
-* **Description:** Build and maintain reusable UI component libraries that work across different frameworks.
-* **Status:** Coming Soon
-* **Learn More:** [View Tool Page](./tools/component-library/index.html)
+* **Description:** A high-performance File Integrity Monitoring (FIM) solution to track changes to critical files and directories, ensuring system integrity and security.
+* **Status:** Live
+* **Learn More:** [View Tool Page](./tools/veriscan/index.html)
 
 ---
 
@@ -66,8 +66,9 @@ ModularDev.tools/
 ├── js/                   # Main website scripts
 ├── tools/                # Individual tool applications
 │   ├── api-docs/         # API Documentation Generator
-│   ├── component-library/ # Component Library (WIP)
-│   └── design-system/    # Design System Generator
+│   ├── design-system/    # Design System Generator
+│   ├── pinpoint-planner/ # PinPoint Planner Tool
+│   └── veriscan/         # Veriscan FIM Tool
 ├── about.html
 ├── contact.html
 ├── index.html
