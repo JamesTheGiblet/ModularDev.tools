@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Project Flux - ModularDev.tools</title>
+    <meta name="description" content="An interactive experience from ModularDev.tools.">
+    <script>
+      // Dynamically set the base URL for asset loading to work on GitHub Pages and locally.
+      const host = window.location.hostname;
+      let basePath = '/';
+      if (host.endsWith('github.io')) {
+        // Assumes the repo name is the first segment of the path.
+        const repoName = window.location.pathname.split('/')[1];
+        if (repoName) {
+          basePath = `/${repoName}/`;
+        }
+      }
+      document.write(`<base href="${basePath}">`);
+    </script>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/praximous-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Welcome Modal Styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1000; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #2c2c2c; /* Dark background for content */
+            color: #f1f1f1;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 8px;
+            text-align: center;
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        .modal-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Welcome Modal -->
+    <div id="welcome-modal" class="modal">
+        <div class="modal-content">
+            <h2>Welcome to Project Flux</h2>
+            <p>Prepare for an epic journey! You are about to enter a world of modular development where your creativity is the only limit. Are you ready?</p>
+            <button id="continue-btn" class="modal-button">Continue to Play</button>
+        </div>
+    </div>
+
+    <!-- Main content for the page can go here -->
+    <main class="static-page-section">
+        <div class="container" style="min-height: 50vh;">
+            <!-- This is where the "game" or main content of Project Flux will live. -->
+        </div>
+    </main>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Modal Logic
+        window.addEventListener('load', function() {
+            const modal = document.getElementById('welcome-modal');
+            const continueBtn = document.getElementById('continue-btn');
+
+            // Show the modal
+            modal.style.display = 'block';
+
+            // When the user clicks on the continue button, close the modal
+            continueBtn.onclick = function() {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
+
