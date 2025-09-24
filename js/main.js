@@ -201,6 +201,18 @@ function initializePageScripts() {
     });
 }
 
+/**
+ * Opens the Project Flux easter egg in a new popup window.
+ */
+function openFluxPopup() {
+    const url = 'tools/project-flux/flux_popup.html';
+    const windowName = 'ProjectFlux';
+    const windowFeatures = 'width=700,height=500,resizable=yes,scrollbars=no,status=no';
+    window.open(url, windowName, windowFeatures);
+}
+
+
+
 
 /**
  * Fetches and injects reusable HTML components like header and footer.

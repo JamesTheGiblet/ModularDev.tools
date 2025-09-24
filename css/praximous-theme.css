@@ -601,6 +601,23 @@ footer {
     color: var(--text-muted);
 }
 
+/* Secret footer link for easter egg */
+.footer-secret {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1001; /* Above back-to-top button */
+}
+.footer-secret a {
+    color: var(--card-bg); /* Hide it against the background */
+    font-size: 1.2rem;
+    transition: color 0.5s ease;
+}
+.footer-secret a:hover {
+    color: var(--accent); /* Reveal on hover */
+    text-decoration: none;
+}
+
 /* Forms */
 .form-group {
     margin-bottom: 1.5rem;
