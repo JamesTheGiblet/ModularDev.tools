@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Design System Generator - ModularDev.tools</title>
+    <meta name="description" content="The Praximous Design System Generator is a full-stack web application designed to create, manage, and export a consistent and brand-aligned CSS stylesheet.">
+    <script>
+      // Dynamically set the base URL for asset loading to work on GitHub Pages and locally.
+      const host = window.location.hostname;
+      let basePath = '/';
+      if (host.endsWith('github.io')) {
+        // Assumes the repo name is the first segment of the path.
+        const repoName = window.location.pathname.split('/')[1];
+        if (repoName) {
+          basePath = `/${repoName}/`;
+        }
+      }
+      document.write(`<base href="${basePath}">`);
+    </script>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/praximous-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main class="static-page-section">
+        <div class="container">
+            <article>
+                <h1 class="js-scroll-animate" style="text-align: center;">Praximous Design System Generator</h1>
+                <p class="js-scroll-animate" style="text-align: center;">
+                    <img src="https://img.shields.io/badge/status-active-success" alt="Project Status: Active">
+                    <img src="https://img.shields.io/badge/license-MIT-blue" alt="License: MIT">
+                    <img src="https://img.shields.io/badge/tech-Node.js%20%7C%20Express%20%7C%20Vanilla%20JS-orange" alt="Tech Stack">
+                    <img src="https://img.shields.io/badge/maintained-yes-brightgreen" alt="Maintained: Yes">
+                </p>
+
+                <p class="js-scroll-animate">The Praximous Design System Generator is a full-stack web application designed to create, manage, and export a consistent and brand-aligned CSS stylesheet. It provides a live, interactive interface to visually define design tokens and immediately see their effect on common UI components.</p>
+                <p class="js-scroll-animate">This application has evolved from a simple client-side tool into a complete service with user accounts, "Pro" tier subscriptions via Stripe, and an admin dashboard, demonstrating a full-fledged SaaS architecture.</p>
+
+                <div class="js-scroll-animate" style="margin: 2rem 0; text-align: center;">
+                    <div class="cta-buttons" style="margin-top: 0; justify-content: center;">
+                        <a href="https://modulardev-tools.github.io/Design-System-Generator-MVP" class="btn btn-large" target="_blank" rel="noopener noreferrer">Launch the Generator</a>
+                        <a href="https://github.com/ModularDev-Tools/design-system-generator" class="btn btn-secondary btn-large" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View Source</a>
+                    </div>
+                </div>
+
+                <img src="images/Screenshot.png" alt="A screenshot of the Design System Generator showing the visual editor sidebar and the real-time component preview." class="js-scroll-animate" style="width: 100%; max-width: 800px; margin: 1rem auto; display: block; border-radius: 0.5rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);">
+
+                <hr class="js-scroll-animate">
+
+                <h2 class="js-scroll-animate">The Problem: The Challenge of Brand Consistency</h2>
+                <p class="js-scroll-animate">As a project scales, it faces critical challenges:</p>
+                <ul class="js-scroll-animate">
+                    <li><strong>🎨 Brand Dilution:</strong> Without a central style guide, projects can develop inconsistencies in colors, fonts, and spacing.</li>
+                    <li><strong>⏳ Wasted Developer Hours:</strong> Developers spend valuable time writing boilerplate CSS and "reinventing the wheel" for basic components.</li>
+                    <li><strong>🔧 High Maintenance Overhead:</strong> A simple brand refresh becomes a monumental task, requiring developers to hunt down and edit multiple stylesheets.</li>
+                    <li><strong>🚧 Designer-Developer Friction:</strong> Manually translating design specs into CSS can lead to errors and misinterpretations.</li>
+                </ul>
+
+                <h2 class="js-scroll-animate">The Solution: A Single Source of Truth</h2>
+                <p class="js-scroll-animate">This Design System Generator solves these problems by becoming the single source of truth for all front-end styling.</p>
+                <ul class="js-scroll-animate">
+                    <li><strong>✅ Enforces Uniformity:</strong> Guarantees that every button, card, and layout across all applications looks and feels cohesive.</li>
+                    <li><strong>🚀 Accelerates Development:</strong> Developers can skip the tedious CSS setup and immediately start building features with pre-made, on-brand components.</li>
+                    <li><strong>⚙️ Centralizes Management:</strong> Need to update the brand's border radius? Change it here once, click "Export," and the update is ready to be deployed across all projects.</li>
+                    <li><strong>🤝 Bridges the Gap:</strong> The visual interface empowers designers and brand managers to make tangible styling decisions and export production-ready code themselves.</li>
+                </ul>
+
+                <hr class="js-scroll-animate">
+
+                <div class="collapsible-section js-scroll-animate">
+                    <h2 class="collapsible-toggle">Key Features <i class="fas fa-chevron-down"></i></h2>
+                    <div class="collapsible-content">
+                        <h3>Core Generator Features</h3>
+                        <ul>
+                            <li><strong>Live Visual Editing:</strong> Modify brand colors, fonts, spacing, shadows, and more using the intuitive sidebar controls.</li>
+                            <li><strong>Real-time Preview:</strong> See your changes instantly reflected on a comprehensive set of sample UI components.</li>
+                            <li><strong>Dark/Light Theme Support:</strong> A built-in theme toggle demonstrates and supports both light and dark mode styling.</li>
+                            <li><strong>Accessibility Checker:</strong> The tool provides real-time color contrast warnings to help you build accessible palettes.</li>
+                            <li><strong>Multiple Export Options:</strong> Export CSS, SCSS variables, or a self-contained HTML style guide.</li>
+                            <li><strong>Save & Load Themes:</strong> Save your current settings to a local JSON file and load them back in later.</li>
+                        </ul>
+                        <h3>Full-Stack & Pro Features</h3>
+                        <ul>
+                            <li><strong>User Authentication:</strong> Secure user registration, login, and password reset functionality using JWTs.</li>
+                            <li><strong>Stripe Subscriptions:</strong> "Pro" tier functionality powered by Stripe Checkout for recurring subscriptions.</li>
+                            <li><strong>Customer Portal:</strong> Pro users can manage their subscription through a secure, Stripe-hosted customer portal.</li>
+                            <li><strong>Admin Dashboard:</strong> A protected admin area to manage users and their subscription status.</li>
+                            <li><strong>Simulated Pro Features:</strong> Interactive modals for advanced features like publishing to a CDN and syncing with Figma.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+    <script src="js/main.js"></script>
+</body>
+</html>
