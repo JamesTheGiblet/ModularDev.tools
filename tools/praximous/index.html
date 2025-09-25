@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Praximous AI Gateway - ModularDev.tools</title>
+    <meta name="description" content="Praximous is an intelligent, secure AI gateway for enterprises, giving you full control over AI usage with dynamic failover, pluggable providers, and reusable Smart Skills.">
+    <script>
+      // Dynamically set the base URL for asset loading to work on GitHub Pages and locally.
+      const host = window.location.hostname;
+      let basePath = '/';
+      if (host.endsWith('github.io')) {
+        // Assumes the repo name is the first segment of the path.
+        const repoName = window.location.pathname.split('/')[1];
+        if (repoName) {
+          basePath = `/${repoName}/`;
+        }
+      }
+      document.write(`<base href="${basePath}">`);
+    </script>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/praximous-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main class="static-page-section">
+        <div class="container">
+            <article style="text-align: center;">
+                <h1 class="js-scroll-animate">A Secure, On-Premise AI Gateway</h1>
+                <p class="js-scroll-animate section-subtitle" style="font-size: 1.3rem;">
+                    Take full control of your enterprise AI usage. Praximous provides a central orchestration layer with dynamic failover, pluggable providers, and reusable "Smart Skills."
+                </p>
+                <p class="js-scroll-animate" style="text-align: center;">
+                    <img src="https://img.shields.io/badge/status-MVP-success" alt="Project Status: MVP">
+                    <img src="https://img.shields.io/badge/license-MIT-blue" alt="License: MIT">
+                    <img src="https://img.shields.io/badge/tech-Python%20%7C%20FastAPI%20%7C%20React-orange" alt="Tech Stack">
+                    <img src="https://img.shields.io/badge/deployment-Docker-blue" alt="Deployment: Docker">
+                </p>
+
+                <p class="js-scroll-animate">Praximous transforms how you deploy and scale large language models (LLMs) by serving as an intelligent, secure gateway. It keeps your data on-premise, prevents vendor lock-in, and simplifies development with a unified API.</p>
+
+                <div class="js-scroll-animate" style="margin: 2rem 0; text-align: center;">
+                    <div class="cta-buttons">
+                        <a href="https://github.com/JamesTheGiblet/praximous_mvp_scaffold" class="btn btn-large" target="_blank" rel="noopener noreferrer">Get Started</a>
+                        <a href="https://github.com/JamesTheGiblet/praximous_mvp_scaffold" class="btn btn-secondary btn-large" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View Source</a>
+                    </div>
+                </div>
+
+                <img src="images/praximous-gui.png" alt="A screenshot of the Praximous GUI showing the dashboard with analytics and task submission." class="js-scroll-animate" style="width: 100%; max-width: 800px; margin: 1rem auto; display: block; border-radius: 0.5rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);">
+
+                <hr class="js-scroll-animate">
+                <article>
+                    <h2 class="js-scroll-animate">The Problem: The Chaos of Enterprise AI</h2>
+                    <p class="js-scroll-animate">Integrating LLMs into enterprise workflows introduces significant challenges:</p>
+                    <ul class="js-scroll-animate">
+                        <li><strong>💸 Uncontrolled Costs:</strong> Direct API calls to powerful models can lead to unpredictable and spiraling expenses.</li>
+                        <li><strong>🔐 Data Security Risks:</strong> Sending sensitive corporate data to third-party cloud services creates major security and compliance vulnerabilities.</li>
+                        <li><strong>🧱 Vendor Lock-In:</strong> Building applications directly on a single provider's API makes it difficult and costly to switch models or services.</li>
+                        <li><strong>🧩 Development Complexity:</strong> Teams waste time building redundant logic, managing multiple API keys, and handling provider-specific integrations.</li>
+                    </ul>
+    
+                    <h2 class="js-scroll-animate">The Solution: A Central Command Center</h2>
+                    <p class="js-scroll-animate">Praximous acts as a central orchestration layer to solve these problems, giving you back control.</p>
+                    <ul class="js-scroll-animate">
+                        <li><strong>✅ Control Costs:</strong> Use powerful LLMs only when needed with smart routing and failover to cheaper or local models.</li>
+                        <li><strong>🛡️ Keep Data Secure:</strong> Deploy on-premise with Docker. Your data never leaves your environment.</li>
+                        <li><strong>🔌 Avoid Lock-In:</strong> Swap LLM providers with a simple configuration change—no code modifications required.</li>
+                        <li><strong>🚀 Simplify Development:</strong> Provide your teams with a single, stable API endpoint and a library of reusable "Smart Skills."</li>
+                    </ul>
+                </article>
+            </article>
+        </div>
+    </main>
+
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2>Core Features</h2>
+            <div class="features-grid js-scroll-animate">
+                <div class="feature"><i class="fas fa-server"></i><h3>Secure On-Prem Deployment</h3><p>Fully containerized via Docker. No cloud dependencies—your data never leaves your environment.</p></div>
+                <div class="feature"><i class="fas fa-plug"></i><h3>Pluggable Providers</h3><p>Supports multiple LLM providers. Add or switch models by editing a simple config file.</p></div>
+                <div class="feature"><i class="fas fa-shield-alt"></i><h3>Resilient Failover</h3><p>Automatic failover from a primary LLM (e.g., Gemini) to a secondary one (e.g., local Ollama) to ensure uptime.</p></div>
+                <div class="feature"><i class="fas fa-puzzle-piece"></i><h3>Smart Skill Platform</h3><p>Deploy modular, business-specific logic that can operate independently or in conjunction with LLMs.</p></div>
+                <div class="feature"><i class="fas fa-chart-bar"></i><h3>Analytics & Auditing</h3><p>Built-in logging for every API interaction provides full traceability, usage tracking, and cost insights.</p></div>
+                <div class="feature"><i class="fas fa-desktop"></i><h3>Rich GUI</h3><p>An intuitive React-based web interface for task submission, system monitoring, and analytics.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <main class="static-page-section">
+        <div class="container">
+            <h2>Pricing Tiers</h2>
+            <p class="section-subtitle">Flexible tiers for every use case, from small teams to full enterprise deployments.</p>
+            <div class="tiers js-scroll-animate">
+                <div class="tier-card">
+                    <div class="tier-title">Community</div>
+                    <div class="tier-price"><span>Free</span></div>
+                    <ul class="tier-features">
+                        <li>On-Premise Deployment</li>
+                        <li>Pluggable Providers</li>
+                        <li>Smart Skill Platform</li>
+                        <li>Centralized API Gateway</li>
+                        <li>Community Support</li>
+                    </ul>
+                    <a href="https://github.com/JamesTheGiblet/praximous_mvp_scaffold" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Get Started</a>
+                </div>
+                <div class="tier-card featured">
+                    <div class="tier-title">Professional</div>
+                    <div class="tier-price"><span>Contact Us</span></div>
+                    <ul class="tier-features">
+                        <li>Everything in Community</li>
+                        <li>Resilient Failover</li>
+                        <li>Rich GUI with Analytics</li>
+                        <li>Context-Aware Persona</li>
+                        <li>Standard Business Support</li>
+                    </ul>
+                    <a href="contact.html" class="btn">Contact Sales</a>
+                </div>
+                <div class="tier-card">
+                    <div class="tier-title">Enterprise</div>
+                    <div class="tier-price"><span>Contact Us</span></div>
+                    <ul class="tier-features">
+                        <li>Everything in Professional</li>
+                        <li>Advanced Security Features (PII)</li>
+                        <li>RAG Interface</li>
+                        <li>Tiered Licensing System</li>
+                        <li>24/7 Priority Support</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-secondary">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+```
+I've also added a placeholder image `praximous-gui.png` to the `images` directory. You'll want to replace this with an actual screenshot of the Praximous GUI.
+
+Finally, let's add Praximous to the main `index.html` page so visitors can find it.
+
+```diff
+--- a/c:\Users\gilbe\Documents\GitHub\ModularDev.tools\index.html
++++ b/c:\Users\gilbe\Documents\GitHub\ModularDev.tools\index.html
+@@ -61,6 +61,16 @@
+                     <a href="tools/veriscan/index.html" class="btn btn-outline">View Details</a>
+                 </div>
+ 
++                <div class="tool-card">
++                    <div class="tool-icon">
++                        <i class="fas fa-brain"></i>
++                    </div>
++                    <h3>Praximous AI Gateway</h3>
++                    <p>A secure, on-premise AI gateway to control costs, ensure data security, and prevent vendor lock-in.</p>
++                    <a href="tools/praximous/index.html" class="tool-link">Learn More →</a>
++                    <a href="https://github.com/JamesTheGiblet/praximous_mvp_scaffold" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View on GitHub</a>
++                </div>
+             </div>
+         </div>
+     </section>
